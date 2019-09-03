@@ -1,8 +1,7 @@
 """coding=utf-8."""
-
+# Toggles debug logging
+DEBUG = True
 checklist = list()
-checklist.append('Blue')
-checklist.append('Orange')
 
 
 # Create
@@ -105,12 +104,17 @@ def test():
     print(read(0))
     print(read(1))
 
+    completed(0)
+
+    print(read(0))
+
     list_all_items()
 
 # MAIN
 
 
-test()
+if DEBUG:
+    test()
 
 running = True
 while running:

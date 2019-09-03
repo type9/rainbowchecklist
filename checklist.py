@@ -82,6 +82,10 @@ def select(code_letter):
         item_index = user_input("Index to mark?: ")
         completed(int(item_index))
 
+    # Quit out of loop
+    elif code_letter == "Q":
+        return False
+
     # Incorrect Code
     else:
         print("Uknown Code")
